@@ -1,4 +1,8 @@
-
+<?php
+if (isset($_SESSION['haaletatud'])) {
+	header("Location: ?page=tulemus");
+}
+?>
 
 <div id="wrap">
 	<h3>Vali oma lemmik :)</h3>
@@ -18,6 +22,7 @@
 		
 		<br/>
 		<input type="submit" value="Valin!"/>
+		
 	</form>
 
 </div>
